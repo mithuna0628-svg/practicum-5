@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BizHive Business Hub</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            background-color: white;
+            margin: 0;
+            padding: 50px;
+        }
+
+        .navbar {
+            background-color: #203c32;
+            display: flex;
+            width: fit-content;
+            margin: 30px auto;
+        }
+
+        .dropdown {
+            position: relative;
+        }
+
+        .navbar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 18px 20px;
+        }
+
+        .navbar a:hover {
+            background-color: #4d8068;
+        }
+
+        .login {
+            background-color: #16a6d7;
+        }
+
+        .signup {
+            border: 1px solid #4d8068;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #203c32;
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="dropdown">
+            <a href="#">Services ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Business Consulting</a>
+                <a href="#">Marketing</a>
+                <a href="#">Web Development</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="#">Plans ▾</a>
+            <div class="dropdown-content">
+                <a href="#">Basic Plan</a>
+                <a href="#">Professional Plan</a>
+                <a href="#">Premium Plan</a>
+            </div>
+        </div>
+
+        <a href="#">Contact</a>
+        <a href="#" class="login">Log In</a>
+        <a href="#" class="signup">Sign Up</a>
+
+    </div>
+
+</body>
+</html>
